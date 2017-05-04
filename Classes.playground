@@ -1,0 +1,33 @@
+//: Playground - noun: a place where people can play
+
+import UIKit
+
+class Pet {
+    var type = ""
+    var canSwim = true
+    
+    func makeNoise(noise: String) -> String {
+        let greet = noise
+        return noise
+    }
+}
+
+
+var dog = Pet()
+dog.type = "Bulldog"
+
+print(dog.type)
+
+var barking = "Woof, woof"
+
+print(dog.makeNoise(noise: barking))
+
+func engagePet(dog:Pet) {
+    dog.type = "German shepherd"
+}
+
+dog.type
+
+engagePet(dog: dog)
+
+print(dog.type)
