@@ -1,0 +1,22 @@
+//: Playground - noun: a place where people can play
+
+import UIKit
+
+var amount = 500.0
+var discRate = 0.1
+
+
+func calcDiscoint(amount:Double, discRate:Double) -> Double {
+    let discountAmount = amount * discRate
+    
+    if amount > 500.0 {
+        return discountAmount + 50.0
+    }
+    
+    return discountAmount
+    
+}
+
+
+
+let newDiscAmount = calcDiscoint(amount: amount, discRate: discRate)
