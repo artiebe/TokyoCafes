@@ -2,21 +2,28 @@
 
 import UIKit
 
-var amount = 500.0
-var discRate = 0.1
+var amount1 = 500.0
+var discRate1 = 0.1
 
+var discAmt1 = amount1 * discRate1
 
-func calcDiscoint(amount:Double, discRate:Double) -> Double {
-    let discountAmount = amount * discRate
+var amount2 = 1000.0
+var discRate2 = 0.25
+
+var discAmt2 = amount2 * discRate2
+
+func calcDiscountAmount(amount:Double, discountRate:Double) -> Double {
+    let discountAmount = amount * discountRate
     
     if amount > 500.0 {
         return discountAmount + 50.0
     }
     
     return discountAmount
-    
 }
 
+let newDiscAmt = calcDiscountAmount(amount: amount2, discountRate: discRate1)
 
 
-let newDiscAmount = calcDiscoint(amount: amount, discRate: discRate)
+
+
