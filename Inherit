@@ -1,0 +1,27 @@
+import UIKit
+
+class Pet {
+    var name = "Generic pet name"
+    
+    func makeNoise() -> String {
+        let greet = "..."
+        return greet
+    }
+}
+
+var pet = Pet()
+print(pet.makeNoise())
+
+
+class Dog:Pet {
+    override func makeNoise() -> String {
+        let greet = "Woof, woof"
+        return greet
+    }
+}
+
+var dog = Dog()
+
+print(dog.name)
+
+print(dog.makeNoise())
